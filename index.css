@@ -1,0 +1,122 @@
+*{
+
+    margin:0;
+    padding:0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+    transform: 2s;
+    background:linear-gradient(45deg,red,white,green);
+    background-color: black;
+}
+.img svg  polygon{
+    fill:transparent;
+    stroke-width: 1;
+    stroke:rgb(4, 8, 249);
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 1560;
+    background: red;
+
+
+    animation: ani 5s linear  infinite;
+}
+    
+
+@keyframes ani{
+    0%{
+         stroke-dashoffset:1560 ;
+    }
+    40%{
+        stroke-dashoffset:1560 ;
+   }
+   50%{
+    stroke-dashoffset:1560 ;
+   }
+   100%{
+    stroke-dashoffset:0 ;
+   }
+
+}
+div{
+   height:50%;
+    }
+
+ div.l{
+    
+    display: inline-block;
+    font-size: 80px;
+    color:rgb(90, 135, 168,0.1);
+    animation: an 5s linear infinite;
+    border-radius: 50%;
+}
+
+div.l:nth-child(1)
+{
+    animation-delay:0s;
+    color:red;
+    text-shadow: 0 0 15px red;
+}
+div.l:nth-child(2)
+{
+    animation-delay:0.25s;
+    color:red;
+    text-shadow: 0 10 15px red;
+
+}
+div.l:nth-child(3)
+{
+    animation-delay:0.5s;
+    color:rgb(252, 255, 255);
+    text-shadow: 0 20 15px rgb(250, 251, 252);
+}
+div.l:nth-child(4)
+{
+    animation-delay:0.75s;
+    color:rgb(25, 0, 255);
+    text-shadow: 0 40 15px rgb(0, 0, 255);
+
+}
+div.l:nth-child(5)
+{
+    animation-delay:1s;
+    color:rgb(246, 250, 251);
+    text-shadow: 0 80 15px rgb(249, 251, 249);
+
+}
+div.l:nth-child(6)
+{
+    animation-delay:1.25s;
+    color:rgb(4, 70, 18);
+    text-shadow: 0 120 15px rgb(2, 80, 30);
+
+}
+div.l:nth-child(7)
+{
+    animation-delay:1.5s;
+    color:rgb(4, 60, 26);
+    text-shadow: 0 200 15px rgb(6, 55, 27);
+
+}
+
+@keyframes an{
+    0%,100%{
+        filter:blur(3px);
+      /* text-shadow: 0 0 10px red,
+        0 0 10px red,
+        0 0 20px rgb(250, 251, 251),
+        0 0 40px rgb(30, 0, 255),
+        0 0 80px rgb(251, 252, 253),
+        0 0 120px rgb(7, 80, 22),
+        0 0 200px rgb(4, 75, 37);*/
+    }
+    5%,95%{
+        color:rgb(90, 135, 168,0.1);
+        filter:blur(0px);
+        text-shadow: none;
+    }
+}
+
